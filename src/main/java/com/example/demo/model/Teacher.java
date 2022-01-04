@@ -1,16 +1,14 @@
 package com.example.demo.model;
 
-public class Student {
+public class Teacher {
     private String firstName;
     private String lastName;
-    private String nationalCode;
     private String id;
 
-    public Student(String firstName, String lastName, String nationalCode, String studentId) {
+    public Teacher(String firstName, String lastName, String teacherId) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.nationalCode = nationalCode;
-        this.id = studentId;
+        this.id = teacherId;
     }
 
     public String getFirstName() {
@@ -27,14 +25,6 @@ public class Student {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getNationalCode() {
-        return nationalCode;
-    }
-
-    public void setNationalCode(String nationalCode) {
-        this.nationalCode = nationalCode;
     }
 
     public String getId() {
